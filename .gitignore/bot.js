@@ -454,7 +454,7 @@ client.on('message', message => {
       })
     } catch(err) {
       if (command != 'test'){
-          message.channel.send('Commande inconnue ou corrompue. Faites `' + config.prefix + 'help bot` pour la liste des commandes. Si la commande que vous avez entré existe bel et bien, informez un membre du staff du problème.')
+          message.channel.send('Commande inconnue ou corrompue. Faites `' + prefix + 'help bot` pour la liste des commandes. Si la commande que vous avez entré existe bel et bien, informez un membre du staff du problème.')
           .catch(error => console.log(error));
             }
         }
